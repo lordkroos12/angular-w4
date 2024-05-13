@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    width:100%;
+  }
+  
+  .app-traffic-light {
+    position: absolute;
+  }
+  
+  .top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  button{
+    display: inline-block;
+    background-color:yellow;
+    font-size:2rem;
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}

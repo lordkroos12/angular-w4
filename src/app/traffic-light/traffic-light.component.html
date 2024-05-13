@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic Light</title>
+</head>
+<body>
+<div class="container">
+  <div class="traffic-light-container-{{position}}">
+    <div class = "{{position}}">
+        <div class="light" [ngClass]="{'red': lightColor === 'red'}"></div>
+        <div class="light" [ngClass]="{'yellow': lightColor === 'yellow'}"></div>
+        <div class="light" [ngClass]="{'green': lightColor === 'green'}"></div>
+    </div>
+  </div>
+  <button [disabled] = "lightColor == 'red'" (click)="cross(lightColor)" >Cross</button>
+</div>
+
+
+</body>
+</html>

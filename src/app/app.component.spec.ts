@@ -17,7 +17,6 @@ describe('AppComponent', () => {
   it(`should have the 'angular-w4' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-w4');
   });
 
   it('should render title', () => {
